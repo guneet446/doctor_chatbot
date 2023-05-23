@@ -97,7 +97,7 @@ def webhook():
                                 send_message(sender_id, response)
 
 
-                        global diagnosis, symptom
+                        #global diagnosis, symptom
                         if diagnosis is None and sid is not None:
                             diagnosis = diagnose.init_diagnose(sid,age,gender,sender_id)
                             symptom = str(diagnosis.question.items[0]["id"])
